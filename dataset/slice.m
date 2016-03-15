@@ -1,5 +1,7 @@
-% this script slices the images in /raw_image into four parts and saves them into
-% /sliced, meanwhile, it prompts its user to label the image
+% this script slices the images in ./raw_image into four parts and writes them to
+% ./sliced, meanwhile, it prompts its user to label the image
+% labeling can be an exhausting job :(
+% remember, when labeling, enter '{label}' (with the quotation mark).
 
 filenames = dir('raw_image');
 for i = 199+3:1:length(filenames)
@@ -12,7 +14,7 @@ for i = 199+3:1:length(filenames)
         try
             label = input(sprintf('input label for #%d: ', 4*(i-3)+j-1));
         catch ERR
-            warning('STRING NOT CLOSED.')
+            warning('ERR Occured, please try again.')
             label = input(sprintf('input label for #%d: ', 4*(i-3)+j-1));
         end
         close;
