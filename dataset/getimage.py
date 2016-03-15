@@ -1,3 +1,5 @@
+# This script gathers 400 CAPTCHA images from the site, and write it to ./raw_image for later use.
+
 import httplib
 
 url = "mis.teach.ustc.edu.cn"
