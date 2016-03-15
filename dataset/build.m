@@ -1,5 +1,6 @@
-% this script builds a dataset from /sliced
-% the first char of the filename of the image will be the label
+% this script builds a dataset from ./sliced
+% the final dataset will be wrote to built_from_mis.mat, which can be later used by train.py
+% the first character of the filename of the image will be the label
 filenames = dir('sliced');
 label = [];
 data = [];
