@@ -12,5 +12,5 @@ and it will load a CAPTCHA from http://mis.teach.ustc.edu.cn/userinit.do (this i
 
 Prerequisites for **test.py**:
 - Python 2.7 (ipython is recommended for usability)
-- Theano-v0.7 (no guaranteen for any other version, for Theano always changes when a new version is released).
+- Theano-v0.7 (no guarantee for any other version, for Theano always changes when a new version is released).
 - model.dat, this file is essential for test.py to reconstruct the trained model.
